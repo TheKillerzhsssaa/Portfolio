@@ -1,5 +1,19 @@
 /* styles.css */
 
+  /* CSS animations for whole website */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
+    animation: fadeIn 5s ease;
+  }
+
 header {
     background-color: #aaaaaa;
     padding: 20px;
@@ -127,7 +141,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #0015ff;
+  border-color: #12d349;
 }
 
 button {
@@ -159,7 +173,6 @@ button:hover {
 button {
   animation: fadeIn 1s ease;
 }
-
 
 footer {
     background-color: #000;
@@ -196,7 +209,7 @@ footer {
     color: #999;
   }
   
-  .footer-links {
+  .footer-content {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -204,17 +217,33 @@ footer {
     align-items: center;
   }
   
-  .footer-links a {
+  .footer-content a {
     color: #999;
     text-decoration: none;
     margin-right: 15px;
     font-size: 16px;
   }
   
-  .footer-text {
+  .footer-content {
     color: #999;
     font-size: 12px;
     margin-top: 20px;
   }
+  
+  /* CSS animations for foooter elements */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .footer-content,
+  button {
+    animation: fadeIn 1s ease;
+  }
+  
 
 
