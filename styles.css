@@ -1,7 +1,7 @@
 /* styles.css */
 
 header {
-    background-color: #1aafdc;
+    background-color: #aaaaaa;
     padding: 20px;
     text-align: center;
   }
@@ -46,7 +46,7 @@ header {
   }
   
   a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -71,3 +71,27 @@ header {
     font-size: 16px;
     color: #555;
   }
+
+  #project {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .project-grid a {
+    color: #0015ff;
+  }
+  .project-card {
+    background-color: #1bfc1b;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+    
